@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/home.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="weather-app" id="app">
+    <div class="container">
+      <h3 class="logo"> the Weather</h3>
+    </div>
+    <h1 class="temp"> 16&#176;</h1>
+
+    <div class="weather">
+      <span class="condition" id="conditionText"> Cloudy</span>
+      <img src="" alt="" id="conditionImg">
+        
+    </div>
+
+    <div class="city-name">
+      <h1 class="name">
+        cairo
+      </h1>
+      <small> <span class="time" id="time">06 :09 </span>
+        <span class="date">
+          Monday oct 17
+        </span>
+      </small>
+    </div>
+  </div>
+  <div class="rght-div">
+    <div class="search">
+      <input type="text" name="" id="search">
+      <button id="find"> Find</button>
+    </div>
+    <span id="helpText" hidden></span>
+    <div class="citiyes-list">
+      <ul id="citiyeslist">
+        <li onclick="citiyeslistName('japan')"> japan </li>
+        <li onclick="citiyeslistName('new york')"> new york </li>
+        <li onclick="citiyeslistName('china')"> china </li>
+        <li onclick="citiyeslistName('london')"> london </li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="wind-info"> <span> wind speed</span> <span id="windSpeed"> 30 k/h</span></div>
+      <div class="wind-info"> <span> wind degree</span> <span id="windeg"> 30 k/h</span></div>
+      <div class="wind-info"> <span> wind dir</span> <span id="winDir"> 30 k/h</span></div>
+    </div>
+  </div>
+  <script src="/js/home.js"></script>
+</body>
+</html>
